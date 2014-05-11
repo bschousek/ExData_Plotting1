@@ -1,4 +1,8 @@
+#first load in the data. 
+# loadfile.R, in the repository with this file, does so
 source("loadfile.R")
+#graphics device opened with transparent background to try
+#   and match the rubric plot. 
 png("plot3.png",width=480,height=480,bg="transparent")
 par(ps=12)
 plot(tidy$timestamp,tidy$Sub_metering_1,type="n",xlab="",col='red',ylab="Energy sub metering")
