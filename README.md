@@ -1,3 +1,9 @@
+## Presented is the full readme from the original fork, with this additional descriptive paragraph:
+This repository includes the four required plot?.R and plot?.png files to complete the assignment.
+In addition it includes loadfile.R which tidies up the monstrously huge input file, and saves that tidy dataset (in binary format) for future use.
+
+The plots are close matches to those supplied as reference plots, down to including the transparent background. Note that the dimensions of the plots match the written requirements of 480X480 rather than the reference plots which are at 504X504 pixels
+
 ## Introduction
 
 This assignment uses data from
