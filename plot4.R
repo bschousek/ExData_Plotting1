@@ -12,14 +12,17 @@ par(mar=c(5,4,4,2))
 #font size set to 12 points, to come close to rubric plot
 par(ps=12)
 
-#first plot (similar to plot2 in assignment)
+#first plot (similar to plot2 in assignment, but for some reason
+#            they left units off the y axis label, so I duplicate
+#            that here)
 plot(tidy$timestamp,tidy$Global_active_power,type="n",
        xlab="",ylab="Global Active Power")
 lines(tidy$timestamp,tidy$Global_active_power,type="l")
 
 
 #second plot (similar to plot3 in assignment, with a notable difference
-#              being the lack of an outline around the legend )
+#              being the lack of an outline around the legend accomplished
+#              with the bty="n" in the legend line)
 par(ps=12)
 plot(tidy$timestamp,tidy$Sub_metering_1,type="n", xlab="",
         col='red', ylab="Energy sub metering")
