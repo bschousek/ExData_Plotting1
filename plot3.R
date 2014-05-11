@@ -3,7 +3,10 @@
 source("loadfile.R")
 #graphics device opened with transparent background to try
 #   and match the rubric plot. 
+#Note the rubric lists a different width and height than the reference plots
+
 png("plot3.png",width=480,height=480,bg="transparent")
+#font size set to 12 points, to come close to rubric plot
 par(ps=12)
 plot(tidy$timestamp,tidy$Sub_metering_1,type="n",xlab="",col='red',ylab="Energy sub metering")
 lines(tidy$timestamp,tidy$Sub_metering_1,col='black')
