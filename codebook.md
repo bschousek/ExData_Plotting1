@@ -1,4 +1,4 @@
-## Copied from the assignment description 
+## Baseline from the assignment description 
 ## Introduction
 
 This assignment uses data from
