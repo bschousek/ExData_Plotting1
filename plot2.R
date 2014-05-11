@@ -1,8 +1,7 @@
 source("loadfile.R")
-par()
+png("plot2.png",,width=480,height=480,bg="transparent")
+par(ps=12)
 plot(tidy$timestamp,tidy$Global_active_power,type="n",xlab="",ylab="Global Active Power (kilowatts)")
 lines(tidy$timestamp,tidy$Global_active_power,type="l")
-if(saveplots) {
-    dev.copy(png,"plot2.png",width=480,heigh=480,bg="transparent")
-    dev.off()
-}
+#dev.copy(png,"plot2.png",width=480,height=480,bg="transparent")
+dev.off()
